@@ -1,0 +1,18 @@
+/*etiquetas  <.. orden alfabetico
+identificadores 
+clases 
+pseudoelementos*/
+
+body {
+	/*atributos:valor;*/
+	background: rgb(255,255,255);
+	/*color: #000021;*/
+	color:#000000;
+	max-width: 1024px;
+	margin: 0 auto; 
+	/*0 no se va a mover ni arriba ni 
+	abajo y el auto todo lo que tenga en la 
+	pagina la voy a dividir en lo que quede vacio centra el contenido*/
+	/*todo en la web es una caja, el margin determina alineaciones verticales
+	y horizontal, puede ser negativo o positivo */
+}
