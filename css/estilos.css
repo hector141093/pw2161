@@ -1,7 +1,10 @@
 /*etiquetas  <.. orden alfabetico
 identificadores 
 clases 
-pseudoelementos*/
+pseudoelementos
+CARACTERISTICAS PRINCIPALES
+MODELO DE CAJAS Y SON RELATIVOS A LA CAJA QUE LO CONTIENEN
+*/
 
 body {
 	/*atributos:valor;*/
@@ -15,4 +18,27 @@ body {
 	pagina la voy a dividir en lo que quede vacio centra el contenido*/
 	/*todo en la web es una caja, el margin determina alineaciones verticales
 	y horizontal, puede ser negativo o positivo */
+}
+body header{
+	background: blue;	/*fondo*/
+	border: 1px solid black; /*alrededor*/
+	border-radius: 3px; 	/*esquinas*/
+	color: white;		/*letra*/
+}
+header h1{
+	text-align: center;
+
+}
+header nav ul li{
+	/*border:1px solid yellow;*/
+	background: white;
+	border-radius: 5px;
+	color: black;
+	display: inline-block;
+	margin: 0px 40px ;	
+	padding: 10px
+}
+header nav ul li:hover{ /*cuando al li le pnga el mouse encima*/
+	background: black;
+	color: white;
 }
