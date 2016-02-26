@@ -41,4 +41,5 @@ header nav ul li{
 header nav ul li:hover{ /*cuando al li le pnga el mouse encima*/
 	background: black;
 	color: white;
+
 }
