@@ -20,13 +20,16 @@ body {
 	y horizontal, puede ser negativo o positivo */
 }
 body header{
+
 	background: blue;	/*fondo*/
 	border: 1px solid black; /*alrededor*/
 	border-radius: 3px; 	/*esquinas*/
 	color: white;		/*letra*/
+	box-shadow: 5px 5px 20px purple;
 }
 header h1{
 	text-align: center;
+	text-shadow: 5px 5px 10px white;
 
 }
 header nav ul li{
@@ -36,10 +39,30 @@ header nav ul li{
 	color: black;
 	display: inline-block;
 	margin: 0px 40px ;	
-	padding: 10px
+	padding: 10px;
+	box-shadow: -5px -5px 20px black;/*box-shadow: derecha abajo color; <-- determina una caja y cuanta sombra habá*/
+}
+header img{
+	float: right;
+	margin-right:5px;
+	margin-top: 5px;
+	width: 80px;
 }
 header nav ul li:hover{ /*cuando al li le pnga el mouse encima*/
 	background: black;
 	color: white;
+	
 
 }
+/*Aquí van los IDs*/
+#seccion1 {
+border:10px solid red;
+}
+
+#seccion1 article{
+border:10px solid black;
+display: inline-block;
+vertical-align: top;
+width: 31.07%;
+}
+
