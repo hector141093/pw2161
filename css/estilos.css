@@ -29,7 +29,8 @@ body header{
 }
 header h1{
 	text-align: center;
-	text-shadow: 5px 5px 10px white;
+	text-shadow: 5px 5px 10px green; /*sombra*/
+	font-family: 'Pacifico', cursive;
 
 }
 header nav ul li{
@@ -41,6 +42,7 @@ header nav ul li{
 	margin: 0px 40px ;	
 	padding: 10px;
 	box-shadow: -5px -5px 20px black;/*box-shadow: derecha abajo color; <-- determina una caja y cuanta sombra habá*/
+	font-family: 'Roboto Mono', ;
 }
 header img{
 	float: right;
@@ -64,5 +66,7 @@ border:10px solid black;
 display: inline-block;
 vertical-align: top;
 width: 31.07%;
+font-family: 'Handlee', cursive;
+
 }
 
