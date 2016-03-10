@@ -1,0 +1,25 @@
+﻿/*orden primero las etiquetas luego ids y pseudo*/
+body{
+	border:1px solid blue;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+header{
+	background: #B3D8EB;
+}
+header nav{
+	background: #0E6CB0;
+	border-radius: 5px;
+	padding: -1px 0px 2px 0px;
+	/*puede darle margin a los li o padding al nav no afecta nada*/
+}
+header nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	color:white;
+}
+#logo
+{
+	margin-top: -200px;
+}
