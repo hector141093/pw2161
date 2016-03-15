@@ -1,6 +1,6 @@
 body{
 	border:1px solid blue;
-	font-size: 16px;
+	font-size: 16px; /*1em*/
 	margin: 0 auto;
 	max-width: 1024px;
 }
@@ -34,6 +34,14 @@ form input[type="button"]{
 	background: green;
 	color: white;
 }
+.boton{
+	display: block; /*sino no agarra el text align */
+	text-align: center;
+}
+.boton input{
+	color: blue;
+}
+
 #logo
 {
 	margin-top: -200px;
@@ -45,4 +53,22 @@ form input[type="button"]{
 	border: 5px solid rgba(150,150,150,0.3);
 	margin-top: 15px;
 	width: 98%;
+}
+#seccion02{
+	margin: 0 auto;
+}
+#seccion02	article{
+	border:1px solid black;
+	display: inline-block;
+	width: 32.87%;
+	vertical-align: top;
+}
+.otraSeccion,.unaSeccion{
+	font-weight: bold;
+}
+.otraSeccion{
+	font-size: 2.5em;
+}
+.unaSeccion{
+	font-size: 4.5em;
 }
