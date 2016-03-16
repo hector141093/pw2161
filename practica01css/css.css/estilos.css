@@ -40,6 +40,8 @@ form input[type="button"]{
 }
 .boton input{
 	color: blue;
+	background: white;
+	border-radius: 5px;
 }
 
 #logo
