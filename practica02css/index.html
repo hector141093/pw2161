@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Práctica 2</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header> 
-	<img src="img/banner.png" alt="">
-	<img src="img/granthams.png" alt="">
-	<img src="img/paint.png" alt="">
+	<img id="banner" src="img/banner.png" alt="">
+	<img id="logo"src="img/granthams.png" alt="">
+	<img id="paint"src="img/paint.png" alt="">
 	<input type="search" placeholder="Search" size="25">
 		<nav>
 			<ul>
@@ -25,7 +26,8 @@
 			<img src="img/slide.jpg" alt="">
 		</article>
 		<article id="seccion01art02">
-			<span clas="wecanoffer">We can offer...</span>
+			<span class="wecanoffer">We can <br>offer...</span>
+			<span id="lista">
 			<ul>
 				<li>Highly Competitive Prices</li>
 				<li>Variable Data</li>
@@ -36,8 +38,9 @@
 				<li>Monthly Offers</li>
 				<li>Great Customer Service</li>
 			</ul>
+			</span>
 		</article>
-		<img src="img/bg_offer.png" alt="" id="bgoffer">
+		<img id="imgOffer" src="img/bg_offer.png" alt="" id="bgoffer">
 	</section>
 	<section id="segundaSeccion">
 		<article>
@@ -62,11 +65,19 @@
 		</article>
 		<article>
 			<img src="img/new.png" alt="">
-			<span class="colorazul">Upload your file</article>
+			<span class="colorazul">Upload your file</span>
 			<br>
 			Making it easy to order your priting today. Our upload facility enables you to send your files directly to us. Use the notes section to inform us of your order, then sit back and wait for a member of our team to contact you.
 			<p>
-		<span class="colorazul">Upload Your File Now</span>
+			<span class="colorazul">Upload Your File Now</span>
+		</article>
+		<article>
+			<span class="colorrosa">Stay in touch</span>
+			<p>
+			Join our mailing list today
+			<input type="email" placeholder="Email goes here">
+			<input type="submit" value="Send" >
+		</article>
 	</section>
 </body>
 </html>

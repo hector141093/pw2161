@@ -1,0 +1,105 @@
+body{
+	border: solid blue 1px;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+
+}
+body header{
+	height: 200px;
+}
+body header nav{
+	margin-top: 100px;
+	z-index: 30;
+}
+body header nav ul{
+	text-align: center;
+}
+body header nav ul li{
+	display: inline-block;
+	margin-right: 25px;
+	font-family: Helvetica;
+	font-size: 1.5em;
+	color: rgba(100,100,100,0.5);
+}
+header input{
+	position: absolute;
+	margin-left: 530px;
+	margin-top: 15px;
+	border-color: black;
+	border-radius: 3px;
+	z-index: 20;
+}
+
+#lista{
+	display: block;
+	text-align: left;
+	margin-right: 70px;
+	margin-top: 0px;
+}
+
+#banner{
+	width: 100%;
+}
+
+#logo{
+	/*position: absolute;
+	margin: 40px 0px 0px 30px;*/
+	/*margin-left: -950px;*/
+	float: left;
+	margin-top: 30px;
+	margin-left: 40px;
+}
+#paint{
+	float: right;
+	position: absolute;
+	margin-left: 505px;
+	z-index: -1;
+}
+
+#imgOffer{
+	position: absolute;
+	margin-top: -415px;
+	margin-left: -40px;
+ }
+#artImg{
+	width: 65%;
+}
+#artTxt{
+	margin-left: 20px;
+	width: 30%;
+}
+
+#primerSeccion{
+	text-align: center;
+}
+#seccion01art01{
+	display: block; /*display y vertical*/
+	text-align: left;
+}
+#seccion01art02{
+	display: block; /*display y vertical*/
+	border:1px solid red;
+	text-align: center;
+}
+#seccion01art02 ul li{
+	text-align: right;
+}
+#terceraSeccion{
+	display: inline-block;
+}
+
+.wecanoffer{
+	display: block;
+	font-size: 3em;
+	font-weight: bold;
+	color: #D54286;
+	text-align: right;
+	/*margin-right: 150px;*/
+	margin-top: -300px;
+}
+.titulo2{
+	font-size: 2em;
+	font-weight: bold;
+	color: #D54286;
+}
