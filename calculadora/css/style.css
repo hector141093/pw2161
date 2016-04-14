@@ -5,15 +5,15 @@ body{
 	text-align: center;
 }
 form{
-	background: gray;
+	background: black;
 	border: 1px solid black;
 	box-shadow: 15px 15px 15px rgba(50,50,50,0.3);
 	margin: 0 auto;
 	padding: 10px;
 	width: 300px;
+	border-radius: 5px;
 }
-form input
-{
+form input{
 	border-radius: 5px;
 	font-size: 1.5em;
 }
