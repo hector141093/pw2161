@@ -2,7 +2,7 @@ body{
 	border: solid blue 1px;
 	font-size: 16px;
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1078px;
 
 }
 body header{
@@ -16,19 +16,23 @@ body header nav ul{
 	text-align: center;
 }
 body header nav ul li{
+	border-bottom: 1px solid gray;
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 15px;
 	font-family: Helvetica;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	color: rgba(100,100,100,0.5);
 }
 header input{
-	position: absolute;
+	/*position: absolute;
 	margin-left: 530px;
 	margin-top: 15px;
 	border-color: black;
 	border-radius: 3px;
-	z-index: 20;
+	z-index: 20;*/
+	float: right;
+	margin-right: 10%;
+	position: relative;
 }
 
 #lista{
@@ -59,8 +63,8 @@ header input{
 
 #imgOffer{
 	position: absolute;
-	margin-top: -415px;
-	margin-left: -40px;
+	top:12%;
+	left: 18%;
  }
 #artImg{
 	width: 65%;
@@ -69,29 +73,40 @@ header input{
 	margin-left: 20px;
 	width: 30%;
 }
+#primerSeccion
+{
+	margin-top: 70px;
+}
+#primerSeccion article{
 
-#primerSeccion{
-	text-align: center;
+	display: inline-block;
+	margin-left: 25px;
+	vertical-align: top;
 }
 #seccion01art01{
-	display: block; /*display y vertical*/
-	text-align: left;
+	/*display: block; display y vertical
+	text-align: left;*/
+	width: 60%;
 }
 #seccion01art02{
-	display: block; /*display y vertical*/
+	/*display: block; display y vertical
 	border:1px solid red;
-	text-align: center;
+	text-align: center;*/
+	width:30%;
 }
-#seccion01art02 ul li{
+/*#seccion01art01 img{
+
+}*/
+/*#seccion01art02 ul li{
 	text-align: right;
-}
+}*/
 #terceraSeccion{
 	display: inline-block;
 }
 
 .wecanoffer{
 	display: block;
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: bold;
 	color: #D54286;
 	text-align: right;
@@ -102,4 +117,11 @@ header input{
 	font-size: 2em;
 	font-weight: bold;
 	color: #D54286;
+}
+.numerotelefono{
+	font-size: 2.5em;
+	font-weight: bold;
+}
+#terceraSeccion article img {
+	vertical-align: middle;
 }
