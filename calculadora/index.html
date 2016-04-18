@@ -10,6 +10,7 @@
 	<h1>Calculadora básica</h1>
 	<form action="#" name="calculadora">
 	<table>	
+		<tr><td colspan="4"><span id="casio">CASIO</span></td></tr>
 		<tr>
 			<td colspan=4>
 				<input type="text" size=20 value=0 name="operando1">
@@ -44,9 +45,9 @@
 			<td><input type="button" value="*" onclick="operadores(this.value);"></td>
 		</tr>
 		<tr>
-			<td><input type="button" value="CE"></td>
+			<td><input type="button" value="CE" id="CE" onclick="limpia()"></td>
 			<td><input type="button" value="0" onclick="numeros(this.value);"></td>
-			<td><input type="button" value="="></td>
+			<td><input type="button" value="=" onclick="igual();"></td>
 			<td><input type="button" value="/" onclick="operadores(this.value);"></td>
 		</tr>
 	</table>

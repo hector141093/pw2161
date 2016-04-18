@@ -5,7 +5,7 @@ body{
 	text-align: center;
 }
 form{
-	background: black;
+	background-color: black;
 	border: 1px solid black;
 	box-shadow: 15px 15px 15px rgba(50,50,50,0.3);
 	margin: 0 auto;
@@ -13,7 +13,8 @@ form{
 	width: 300px;
 	border-radius: 5px;
 }
-form input{
+form input
+{
 	border-radius: 5px;
 	font-size: 1.5em;
 }
@@ -23,9 +24,49 @@ form input[type="text"]{
 	font-size: 1.5em;
 }
 form input[type="button"]{
-	background: blue;
+	border: 1px solid black;
+	color:white;
+	background-color: #333;
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.50, rgb(5,5,5)),
+		color-stop(0.50, rgb(100,100,100))
+	);
 	border-radius: 5px;
 	color: white;
 	font-size: 1.5em;
 	width: 70px;
+	font-weight: bold;
+}
+form input[type="button"]#CE{
+	
+	background-color: #333;
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.50, rgb(5,5,5)),
+		color-stop(0.50, rgb(100,100,100))
+	);
+}
+form input[type="button"]:hover{
+	border: 1px solid white;
+}
+#CE{
+	background-color: #F00;
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.50, rgb(250,50,50)),
+		color-stop(0.50, rgb(100,100,100))
+	);
+}
+#casio{
+	padding-right: 80%;
+	color:#AAA;
+	font-weight: bold;
+
 }
