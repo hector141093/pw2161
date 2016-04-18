@@ -1,0 +1,23 @@
+body{
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 1024px;
+	margin-top: 10%;	
+}
+table{
+	border-collapse: collapse; 
+}
+table tr td{
+	border-bottom: 5px solid red;
+	width: 150px;
+	padding-bottom: 120px;
+	border-right: 5px solid red;
+}
+#columna3{
+	border-right: none;
+
+
+}
+.ultimo{
+	border-bottom: none;
+}

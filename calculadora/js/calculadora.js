@@ -36,10 +36,10 @@ function operadores(ope)
 }
 function limpia()
 {
-	document.calculadora.operando1.value="0";
-	document.calculadora.operando2.value="0";
-	document.calculadora.resultado.value="0";
-	operador="";
+	operador="0";
+	document.calculadora.operando1.value=0;
+	document.calculadora.operando2.value=0;
+	document.calculadora.resultado.value=0;
 }	
 function igual()
 {
