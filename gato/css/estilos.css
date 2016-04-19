@@ -1,0 +1,30 @@
+body{
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 1024px;
+	margin-top: 10%;
+	text-align: center;	
+}
+table{
+	border-collapse: collapse; 
+	margin:0 auto;
+}
+td{
+	height: 120px;
+	width: 150px;	
+	border-bottom: 10px solid blue;
+	border-right: 15px solid blue;
+	font-weight: bold;
+	font-size: 6em;
+	text-align: center;
+}
+.celdas{
+	background-color: rgba(250,0,0,0.1);
+}
+
+.columna3{
+	border-right: none;
+}
+.renglon3{
+	border-bottom: none;
+}
