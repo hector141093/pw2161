@@ -3,6 +3,7 @@ var celda="";
 var cont=0,contX=0, contO=0;
 var empate=true, gano=false;
 function clic(id){
+//	var random = Math.random() >= 0.5;
 	celda=id;
 	var contenido=document.getElementById(celda).innerHTML;
 	//Asigna X u O
