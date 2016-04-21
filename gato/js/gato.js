@@ -1,107 +1,103 @@
-var identifica="";
-var c11="c11",c12="c12",c13="c13",c21="c21",c22="c22",c23="23",c31="c31",c32="c32",c33="c33";
-var cont=1;
-var contX=0;
-var contO=0;
-function clic(id)
-{
-	identifica=id;
-	var contenido=document.getElementById(identifica).innerHTML;
-	if(contenido=="")
-	{
-		if(cont%2!=0)
+
+var celda="";
+var cont=0,contX=0, contO=0;
+var empate=true, gano=false;
+function clic(id){
+	celda=id;
+	var contenido=document.getElementById(celda).innerHTML;
+	//Asigna X u O
+	if(contenido==""){
+		if(cont%2==0)
 		{
-		document.getElementById(identifica).innerHTML="X";
+		document.getElementById(celda).innerHTML="X";
 		}else{	
-			document.getElementById(identifica).innerHTML="O";
+			document.getElementById(celda).innerHTML="O";
 		}
-		cont=cont+1;
+		cont++;
 	}
-
-
-/*	for(col=1; col<=3;col++){
-		for(fila=1; fila<=3 ;fila++){
-			var celda="c"+col+fila;
-			if(document.getElementById(celda).innerHTML=="X"){
-				contX++;
-				alert("contX"+contX);
-			}else if(document.getElementById(celda).innerHTML=="O"){
-				contO++;
-			}
-		}
-	}*/
-
-	for(fila=1; fila<=3;fila++){
-
-
-		if(contX==3){
-			alert("Gano X");
-		}else if(contO==3){
-			alert("Gano O");
-		}
-
-	for(col=1; col<=3 ;col++){
-			var celda="c"+col+fila;
-			if(document.getElementById(identifica).innerHTML=="X"){
-				contX=contX+1;
-				return;
-			}else if(document.getElementById(celda).innerHTML=="O"){
-				alert("Entra O");
-				contO=contO+1;
-				return;
-			}
-		}
-	}
-}
- //FALTA HACER COMPARACION, CHECAR GANADOR Y EMPATE
-
- 
-
-
-
-
-
-
-
-
-
-
-/*var contX=0;
-var contO=0;
-var turno=false;
-function clic(ident){
-	if(document.getElementById(ident).innerHTML=="&nbsp;"){
-		if(turno){
-			document.getElementById(ident).innerHTML="X";
-		}else{
-			document.getElementById(ident).innerHTML="O";
-		}
-		turno=!turno;
-	}
-	
-	for(col=1; col<=3;col++){
-		for(fila=1; fila<=3 ;fila++){
-			var casilla="td"+col+fila;
-			if(document.getElementById(casilla).innerHTML=="X"){
-				contX++;
-			}else if(document.getElementById(casilla).innerHTML=="O"){
-				contO++;
-			}
-		}
-	}
+//-----
 	for(fila=1; fila<=3;fila++){
 		for(col=1; col<=3 ;col++){
-			var casilla="td"+col+fila;
-			if(document.getElementById(casilla).innerHTML=="X"){
+			if(document.getElementById(fila+""+col).innerHTML=="X"){
 				contX++;
-			}else if(document.getElementById(casilla).innerHTML=="O"){
+			}else if(document.getElementById(fila+""+col).innerHTML=="O"){
 				contO++;
+			}			
+			if(contX==3){
+				empate=false;
+				alert("Gano X");
+				return;
+			}else if(contO==3){
+				alert("Gano O");
+				return;
+			}
+		}
+		contX=0;
+		contO=0;
+	}
+//|||||||
+	for(col=1; col<=3;col++){
+		for(fila=1; fila<=3 ;fila++){
+			if(document.getElementById(fila+""+col).innerHTML=="X"){
+				contX++;
+			}else if(document.getElementById(fila+""+col).innerHTML=="O"){
+				contO++;
+			}
+			if(contX==3){
+				empate=false;
+				alert("Gano X");
+				return;
+			}else if(contO==3){
+				alert("Gano O");
+				return;
+			}
+		}
+		contX=0;
+		contO=0;
+	}
+	//DIAGONAL PPAL
+	for(fila=1; fila<=3;fila++)
+	{
+		for(col=1; col<=3 ;col++){
+			var diag=fila+""+col
+			if(fila==col){
+				if(document.getElementById(diag).innerHTML=="X"){
+					contX++;
+				}else if(document.getElementById(diag).innerHTML=="O"){
+					contO++;
+				}
+				if(contX==3){
+					empate=false;
+					alert("Gano X");
+				}else if(contO==3){
+					empate=false;
+					alert("Gano O");
+				}
 			}
 		}
 	}
-	if(contX==3){
-		alert("Gano X");
-	}else if(contO==3){
+	contX=0;
+	contO=0;
+	//DIAG INVERSA
+	if(document.getElementById(13).innerHTML=="O"&&document.getElementById(22).innerHTML=="O"
+		&document.getElementById(31).innerHTML=="O")
+	{
+		empate=false;
 		alert("Gano O");
 	}
-}*/
+	if(document.getElementById(13).innerHTML=="X"&&document.getElementById(22).innerHTML=="X"
+		&document.getElementById(31).innerHTML=="X")
+	{
+		empate=false;
+		alert("Gano X");
+	}
+	//VALIDA
+	
+	if(empate==false){
+		gano=true;
+	}
+	if(empate && cont==9){
+		alert("Empate");
+	}
+	
+}
