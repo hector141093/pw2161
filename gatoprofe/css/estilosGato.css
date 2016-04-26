@@ -2,7 +2,7 @@ body
 {
 	font-size: 16px;
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1024px; 
 }
 
 header
@@ -22,7 +22,10 @@ section article table td
 	text-align: center;
 	width: 100px;
 }
-
+#boton{
+	text-align: center;
+	padding-top: 30px;
+}
 #unouno,#unodos,#dosuno,#dosdos
 {
 	border-bottom: 8px solid red;

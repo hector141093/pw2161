@@ -1,0 +1,21 @@
+Almacenar datos dedl lado del cliente
+
+-En el navegador, podemos almacenar pequeñas cantidades de infrmación (Hasta 5 Mb )
+que nos sirven para manipular ciertas condiciones en nuestras aplicaciones.
+
+-Utilizando el objeto storage podemos tener acceso a 2 tipos de almacenamiento:
+
+1.- LOCALSTORAGE: Guarda información en el navegador independientemente si se cierra 
+el navegador.
+
+2.- SESSIONSTORAFE: Guarda la información hasta que se cierra la ventana o el navegador
+
+Antes se utilizaban una tecnica
+denominada Cookies<-- almacenaban hasta 3k de información 
+y eran de forma local y se enviaban.
+
+//SI ALGO NO EXISTE EN JAVASCRIPT ES UNDEFINED EN VEZ DE NULL
+NO EN TODOS LOS CASOS!
+
+----JUEGO DEL GATO
+webCuentaJuego se declara desde el navegador 

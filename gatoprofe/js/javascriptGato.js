@@ -8,7 +8,27 @@ var cuentaJugadas = 0;
 function iniciaGato()
 {
  //En construcción ¬¬
+ 	//Eliminar la variable de localStorage
+ 	// localStorage.removeItem("webCuentaJuego");
+
+	 if(typeof(Storage) != "undefined"){
+	 	if(localStorage.webCuentaJuego){
+	 		cuentaJuego = parseInt(localStorage.webCuentaJuego);
+	 		cuentaJuego = cuentaJuego+1;
+	 	}
+	 	else{
+	 		cuentaJuego=1;
+	 	}
+	 	document.getElementById("tituloJuego").innerHTML="Juego del gato (#"+cuentaJuego+")";
+	 }else{
+	 	alert("UTILIZA UN NAVEGADOR ACTUALIZADO, NO ERES PRO!");
+	 }
 }
+function reinicia(){
+	localStorage.removeItem("webCuentaJuego");
+	iniciaGato();
+}
+
 
 function validaJugada(letra)
 {
@@ -46,10 +66,12 @@ function validaJugada(letra)
 	if(ganador == true) //if(ganador)
 	{
 		alert("¡Ganador "+letra+"!");
+		localStorage.webCuentaJuego=cuentaJuego;
 	}
 	else if(ganador == false && cuentaJugadas == 9)
 	{
 		alert("¡Empate!")
+		localStorage.webCuentaJuego=cuentaJuego;
 	}
 }
 
