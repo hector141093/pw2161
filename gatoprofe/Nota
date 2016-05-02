@@ -19,3 +19,27 @@ NO EN TODOS LOS CASOS!
 
 ----JUEGO DEL GATO
 webCuentaJuego se declara desde el navegador 
+
+
+						------JQUERY----
+DESCARGAR JQUERY PAGINA OFICIAL
+
+DESCARGAR PARA DESARROLLO ES CON ESPACIO Y LA HACE MAS PESADA QUE PRODUCCION
+DESCARGAMOS PARA DESARROLLO
+CDN <-- RED DESCARGABLE DE CONTENIDO 
+
+----------EMPEZANDO
+jquery(etiquetas,clases,id)
+$ Alias (un sobrenombre)
+$ == jquery //significa 
+$(document).ready  //Primeras implementaciones ya no es recomendable 
+
+$(document).on //encendido 
+$(document).off //apagado del evento
+
+//Evento en tiempo de ejecucion (dinámico) diferente del evento en tiempo real....
+
+//$(document).on("ready",inicio);<-- evento,funcion <-- funcion sin parentesis para que no se dispare 2 veces..
+
+$(".anuncioWeb").html("clic del Boton")<-- funciona como inner html
+$(".anuncioWeb").appen("clic del Boton")
