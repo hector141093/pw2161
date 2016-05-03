@@ -6,13 +6,29 @@ var inicio = function(){
 		$(".anuncioWeb").append("clic del Boton");
 	}
 	var clicBoton2 = function(){
-		alert("clicBoton2");
+		$.ajax({
+		  beforeSend:function(){
+		  	console.log("Espere un momento por favor...");
+		  },
+
+		  url: 'https://randomuser.me/api/',
+		  dataType: 'json',
+		  success: function(data){ //codigo 200 = OK ¨http¨ manda el data con json y lo entiende literal js
+		  console.log(data);
+		  alert(data.results[0].name.first+" "+
+		  data.results[0].name.last);
+		  },
+		  error:function(xhr,error,throws){ //xhr es el id del proceso
+		  	console.log("Ocurrió un error");
+		  }
+		});
 	}
 	var teclaUnInput=function(tecla)
 	{
 			if(tecla.which == 13){
 				//QUE SE POSICIONE EN OTRO INPUT
-				$("#otroInput").focus();
+				// $("#otroInput").focus();
+				$("#unInput").blur();
 			}
 	}
 	//Preparar los eventos de todos los objetos
