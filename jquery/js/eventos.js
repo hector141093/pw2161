@@ -15,8 +15,12 @@ var inicio = function(){
 		  dataType: 'json',
 		  success: function(data){ //codigo 200 = OK ¨http¨ manda el data con json y lo entiende literal js
 		  console.log(data);
-		  alert(data.results[0].name.first+" "+
-		  data.results[0].name.last);
+		  // alert(data.results[0].name.first+" "+
+		  // data.results[0].name.last);
+		//MOSTRAMOS LA INFORMACION EN EL HTML
+			$("#fotoPersona").attr("src",data.results[0].picture.large);	
+			$("#txtNombreUser").html(data.results[0].name.first);
+			$("#txtNombreUser").html(data.results[0].name.last);	
 		  },
 		  error:function(xhr,error,throws){ //xhr es el id del proceso
 		  	console.log("Ocurrió un error");
@@ -27,9 +31,13 @@ var inicio = function(){
 	{
 			if(tecla.which == 13){
 				//QUE SE POSICIONE EN OTRO INPUT
-				// $("#otroInput").focus();
-				$("#unInput").blur();
+				// $("#unInput").blur();
+				$("#otroInput").focus();
 			}
+			// if($("#otroInput").is(":focus")){
+			// 	$("#otroInput").blur();
+			// 	$("#unInput").focus();
+			// }
 	}
 	//Preparar los eventos de todos los objetos
 	$("#miBoton").off("click",clicBoton);

@@ -1,0 +1,24 @@
+body{
+	max-width: 1024px;
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: center;
+	color:white;
+	background-color: rgba(6, 0, 0, 0.7);
+	font-family: 'Ubuntu', sans-serif;
+}
+#informacion{
+	background-color: rgba(144, 106, 86, 0.4);
+	padding-top: 10%
+}
+#informacion img{
+	border-radius: 50%;
+	width: 20%
+}
+#miBoton{
+	background-color: rgba(188, 143, 99, 0.9);
+	color:white;
+	border-radius: 10%;
+	width: 20%;
+	font-family: 'Ubuntu', sans-serif;
+}
