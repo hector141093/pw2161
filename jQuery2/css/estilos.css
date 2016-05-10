@@ -1,1 +1,16 @@
-estilos.css
+body{
+	max-width: 1024px;
+	font-size: 16px;
+	margin: 0 auto;
+}
+header nav{
+	display: none;
+	text-align: center;
+}
+header nav ul li{
+	display: inline-block;
+}
+#datosUsuario{
+	width: 320px;
+	margin: 0 auto;
+}
