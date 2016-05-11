@@ -10,6 +10,9 @@ header nav{
 header nav ul li{
 	display: inline-block;
 }
+header nav ul li button{
+	width: 89px;
+}
 #datosUsuario{
 	width: 320px;
 	margin: 0 auto;
