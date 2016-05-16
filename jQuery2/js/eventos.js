@@ -1,26 +1,52 @@
-var iniciaApp=function (){
-	var validarEntrada=function(){
-		//Invalida los eventos que no pertenecen a esta función
-		event.preventDefault(); //Desecha todo el caché de eventos.
+var iniciaApp = function()
+{
+	var validarEntrada = function()
+	{	
+		//Invalida los eventos que 
+		//no corresponden a esta función.	
+		event.preventDefault();
 		var usuario = $("#txtUsuario").val();
-		var clave = $("#txtClave").val();
-		//Validaciones 1.- que no sea vacío
+		var clave   = $("#txtClave").val();
+		//******** Validaciones **********
+		//1.- Que no sean vacíos
 		if(usuario == "")
 		{
 			alert("El usuario no debe ser vacío");
 			$("#txtUsuario").focus();
 		}
-		if(clave == "" ){
+		if(clave == "")
+		{
 			alert("La clave no debe ser vacía");
 			$("#txtClave").focus();
 		}
 		//2.- Verificar usuario y contraseña
-		if(usuario=="pw" && clave=="1234"){
-			// alert("Bienvenido al mundo " + usuario);
-			//Dar entrada al usuario
-			$("#datosUsuario").hide();//Esconder
-			$("nav").show("slow");//mostrar
-		} 
+		var parametros="accion=validaEntrada"+
+					   "&usuario="+usuario+
+					   "&clave="+clave+
+					   "&id="+Math.random(); 
+		$.ajax({
+			beforeSend:function(){
+				console.log("Validar al usuario");
+			},
+			cache: false,
+			type: "POST",
+			dataType: "json",
+			url:"php/funciones.php",
+			data:parametros,
+			success: function(response){
+				if(response.respuesta){
+					$("#datosUsuario").hide();
+					$("nav").show("slow");
+				}
+				else{
+					alert("usuario/contraseña incorrectas");
+				}
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+				console.log("Algo salió mal");
+			}
+		});
+		console.log("Se disparó el submit");
 	}
 	$("#frmValidaEntrada").on("submit",validarEntrada);
 }
