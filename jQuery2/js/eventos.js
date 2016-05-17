@@ -1,6 +1,6 @@
 var iniciaApp = function()
 {
-	var validarEntrada = function()
+	var validaEntrada = function()
 	{	
 		//Invalida los eventos que 
 		//no corresponden a esta función.	
@@ -48,6 +48,6 @@ var iniciaApp = function()
 		});
 		console.log("Se disparó el submit");
 	}
-	$("#frmValidaEntrada").on("submit",validarEntrada);
+	$("#frmValidaEntrada").on("submit",validaEntrada);
 }
 $(document).on("ready",iniciaApp);

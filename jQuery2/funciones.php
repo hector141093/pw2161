@@ -27,7 +27,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   }
   return $theValue;
 //Menu principal  
-function validarEntrada(){
+function validaEntrada(){
 	//Get por URL POST por la "atras" del web
 	$usuario=GetSQLValueString($_POST["usuario"],"text");
 	$clave =  GetSQLValueString(md5($_POST["clave"]),"text");
@@ -54,10 +54,11 @@ function validarEntrada(){
 	//Devolvemos el resultado a Javascript
 	print json_encode($salidaJSON); 
 }
-switch ($action) {
-	case 'validarEntrada':
+$accion= $_POST("accion")
+switch ($accion) {
+	case 'validaEntrada':
 		# code...
-		validarEntrada();
+		validaEntrada();
 		break;
 	
 	default:
