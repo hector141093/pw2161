@@ -1,0 +1,60 @@
+body
+{
+	border: 1px solid blue;
+	border-radius: 5px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+body header img
+{
+	float: right;
+	margin: -30px 30px;
+	width: 100px;
+}
+
+body header h1
+{
+	margin: 10px 0px 0px 30px;
+}
+
+body header nav
+{
+	display: none;
+	margin-top: 35px ;
+}
+
+body header nav ul li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+main
+{
+	margin-top: 80px;
+}
+
+.entradaUsuario,.capturaUsuario,.bajaUsuario,.cambiaUsuario,.buscaUsuario
+{
+	margin: 0 auto;
+	width: 350px;
+}
+.capturaUsuario,.consultaUsuario,.bajaUsuario,.cambiaUsuario,.buscaUsuario{
+	display: none;
+}
+.consultaUsuario{
+	width:900px;
+}
+.buscaUsuario {
+
+}
+
+
+
+
+
+
+
+
+

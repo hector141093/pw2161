@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso PW</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Título de la aplicación</h1> 
+		<img src="img/logoitc.png" alt="Logo del ITCuliacán" title="Logo del ITCuliacán">
+		<nav>
+		<ul>
+			<li>
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"> 
+						Inicio
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-primary" id="btnAltas">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"> 
+						Altas
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-info" id="btnBajas">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"> 
+						Bajas
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-warning" id="btnCambios">
+					<span class="glyphicon glyphicon-repeat" aria-hidden="true"> 
+						Cambios
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-danger" id="btnConsultas">
+					<span class="glyphicon glyphicon-eye-open" aria-hidden="true"> 
+						Consultas
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-primary">
+					<span class="glyphicon glyphicon-hand-right" aria-hidden="true"> 
+						Salir
+					</span>
+				</button>
+			</li>
+		</ul>
+	</nav>
+	</header>	
+	<section>
+		<main> 
+			<div class="entradaUsuario panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Datos del Usuario</h3>
+			  </div>
+			  <div class="panel-body">
+			    <input type="text" class="form-control" id="txtUsuario" placeholder="Nombre del usuario" autofocus>
+			    <input type="password" class="form-control" id="txtClave" placeholder="Contraseña">
+			    <button id="btnEntrar" class="btn btn-success btn-lg btn-block">Entrar</button>
+			  </div>
+			</div>
+			<div class="capturaUsuario"> 
+				<h2>Captura de Usuarios</h2>
+				<form action="javascript:AltaUsuario();" method= "POST" id="frmCapturaUsuario">
+					<input type="text" class="form-control" placeholder="Nombre de usuario" id="txtNombreUsuario" name="txtNombreUsuario">
+					<input type="text" class="form-control" placeholder="Nombre comleto de usuario" id="txtNombre" name="txtNombre">
+					<input type="password" class="form-control" placeholder="Clave" id="txtClaveUsuario" name="txtClaveUsuario">
+					<input type="submit" class="btn btn-lg btn-block btn-success">
+				</form>
+			</div>
+			<div class="consultaUsuario">
+				<h2>Consulta usuario</h2>
+				<table class="table table-striped" id="tablaUsuarios">
+  					
+				</table>
+			</div>
+			<div class="bajaUsuario">
+				<h2>Baja de Usuario</h2>
+				<form action="javascript:BajaUsuario();" method= "POST" id="frmBajaUsuario">
+  						<input type="text" class="form-control" placeholder="Nombre de usuario" id="txtNombreUsuarioBaja" name="txtNombreUsuarioBaja">
+  						<input type="submit" class="btn btn-lg btn-block btn-danger">
+  				</form>
+			</div>
+			<div class="buscaUsuario">
+				<input type="text" class="form-control" id="txtUsuarioBusca" placeholder="Nombre del usuario" autofocus>		    
+			    <button id="btnBuscar" class="btn btn-primary">Buscar</button>
+			    
+			</div>
+			<div class="cambiaUsuario">
+				Nombre: <input type="text" class="form-control" id="txtNombreCambio" name="txtNombreCambio" placeholder="Nombre Completo" autofocus>
+				Contraseña: <input type="password" class="form-control" id="txtClaveCambio" placeholder="Contraseña">
+				 <button id="btnCambia" class="btn btn-danger btn-block btn-lg">Actualizar</button>
+			</div>
+		</main>
+	</section>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/eventos.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
